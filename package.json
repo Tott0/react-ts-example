@@ -2,7 +2,6 @@
   "name": "react-ts2",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://tott0.github.com/react-ts-starter",
   "dependencies": {
     "@types/jest": "23.3.12",
     "@types/node": "10.12.18",
