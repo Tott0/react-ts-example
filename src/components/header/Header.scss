@@ -1,0 +1,30 @@
+@import './src/scss/variables.scss';
+.appHeader{
+  // justify-content: space-between;
+  font-size: 1rem;
+  .container{
+    @include media-xxl{
+      padding: 5em 5em 0;
+    }
+  }
+  .title{
+    text-align: left;
+    font-weight: 200; 
+    font-size: 4.5em;
+  }
+  .subtitle{
+    h3{
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+
+    a.icon{
+      color: var(--color-dark);
+      transition: 0.15s all ease;
+      font-size: 2em;
+      &:hover{
+        color: var(--color-primary);
+      }
+    }
+  }
+}

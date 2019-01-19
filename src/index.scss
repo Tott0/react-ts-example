@@ -16,19 +16,13 @@ code {
 
 html,
 body {
-  @include for-phone-only {
+  @include media-xs {
     font-size: var(--html-font-size-sm);
   }
-  @include for-tablet-portrait-up {
+  @include media-sm {
     font-size: var(--html-font-size-sm);
   }
-  @include for-tablet-landscape-up {
-    font-size: var(--html-font-size-md);
-  }
-  @include for-desktop-up {
-    font-size: var(--html-font-size-lg);
-  }
-  @include for-big-desktop-up {
+  @include media-xl {
     font-size: var(--html-font-size-xlg);
   }
 }
@@ -37,26 +31,11 @@ body {
   margin-top: var(--header-height);
 }
 
-// .container {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   width: 100%;
-//   margin: 0 auto;
-//   align-self: center;
-//   @include for-all-phones{
-//     max-width: 540px !important;
-//   }
-//   @include for-tablet-portrait-up{
-//     width: 750px !important;
-//   }
-//   @include for-tablet-landscape-up {
-//     width: 950px !important;
-//   }
-//   @include for-big-desktop-up {
-//     width: 1200px !important;
-//   }
-// }
+.container {
+  @include media-xxl{
+    max-width: 1520px;
+  }
+}
 
 .bg-image-shadow {
   &:after {
